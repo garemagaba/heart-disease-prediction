@@ -44,7 +44,7 @@ st.sidebar.header('Select Features to Predict Heart Disease')
 st.sidebar.image('https://cdn.dribbble.com/userupload/19915473/file/original-7484a8136023c2ae0ee3bea0a53d8e22.gif')
 
 all_values = []
-
+random.seed(123)
 for i in df.iloc[:,:-1]:
     min_value, max_value = df[i].agg(['min','max'])
 
